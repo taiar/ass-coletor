@@ -1,0 +1,486 @@
+<html>
+<head> 
+<title>Tribunal de Justi&ccedil;a do Estado do Rio Grande do Sul</title> 
+<meta name="keywords" content="processos, consulta processual, andamento processual, jurisprudência, legislação, concursos, custas, Juizados especiais, licitações">
+<meta name="description" content="TJRS - Tribunal de Justiça do Estado do Rio Grande do Sul">
+<meta http-equiv="Content-Type" content="text/html;"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="expires" content="0"> 
+
+<link REL="icon" HREF="/favicon.png" TYPE="image/png">
+<link rel="SHORTCUT ICON" href="/favicon.png" TYPE="image/png">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="alternate" title="TJ RSS" href="/site_php/noticias/news_rss.php" type="application/rss+xml">
+
+<script language="JavaScript" src="/javascript/impressao.js"></script>
+
+<Script Language=JavaScript>
+<!--
+function add_bookmark() {
+   var browsName = navigator.appName; 
+   if (browsName == "Microsoft Internet Explorer") { 
+      //window.external.AddFavorite('http://www.tj.rs.gov.br','TJRS - Tribunal de Justiça do Estado do Rio Grande do Sul');
+      var url="http://www.tj.rs.gov.br";
+	  var title="TJRS - Tribunal de Justiça do Estado do Rio Grande do Sul";   
+	  window.external.AddFavorite(url,title);
+   } else 
+      if (browsName == "Netscape") {
+         alert ("\nPara adicionar essa página ao seu BookMark aperte CTRL+D");
+      }
+}
+
+//-->
+</script>
+ 
+<script language="JavaScript">
+function Generica(){
+return;
+}
+</script>
+
+<script language="JavaScript">
+   function EnviaNoticia(){
+   var janela = window.open('envianoticia.php?assunto=1&categoria=1&item=48490','EnvNoticia','width=450,height=300,scrollbars=0,menubar=0,status=1');      
+   }
+</script>
+
+
+<link rel="stylesheet" href="/css/menu.css" type="text/css">
+<link rel="stylesheet" href="/css/geral-1.css" type="text/css" title="tam-1">
+<link rel="alternate stylesheet" type="text/css" href="/css/geral-2.css" title="tam-2" />
+<link rel="alternate stylesheet" type="text/css" href="/css/geral-3.css" title="tam-3" />
+<link rel="alternate stylesheet" type="text/css" href="/css/geral-4.css" title="tam-4" />
+
+<!--link rel="stylesheet" href="/css/cores_ac.css" type="text/css" id="cores_ac"-->
+<link rel="stylesheet" href="/css/cores.css" type="text/css" id="cores">
+
+<script type="text/javascript" src="/javascript/styleswitcher.js"></script>
+
+<style type="text/css">
+<!--
+#divEstilos {
+	position:absolute;
+	left:695px;
+	top:71px;
+	width:78px;
+	height:22px;
+	z-index:1;
+}
+-->
+</style>
+</head>
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onLoad="Generica();"> <!--MM_preloadImages('/imagens/index_r2_c12_f2.gif','/imagens/menu/menu_institu_f2.gif','/imagens/menu/menu_proc_f2.gif','/imagens/menu/menu_jurispru_f2.gif','/imagens/menu/menu_legisla_f2.gif','/imagens/menu/menu_servicos_f2.gif','/imagens/menu/menu_noticias_f2.gif','/imagens/menu/menu_licita_f2.gif','/imagens/menu/menu_conc_f2.gif')"-->
+<div id="divEstilos">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <th scope="row"><a href="javascript:aumentaFonte();ajustaScrollHoriz();" accesskey="a"><img src="/imagens/menu/aumentar.gif" width="17" height="15" alt="aumentar o tamanho do texto (ALT + A)" title="aumentar o tamanho do texto (ALT + A)" style="border: 0px;"></a></th>
+
+      <th scope="row"><a href="javascript:diminuiFonte();ajustaScrollHoriz();" accesskey="d"><img src="/imagens/menu/diminuir.gif" width="17" height="15" alt="diminuir o tamanho do texto (ALT + D)" title="diminuir o tamanho do texto (ALT + D)" style="border: 0px;"></a></th>
+      <th scope="row"><a href="javascript:desativaAltoContraste();setActiveStyleSheet('tam-1');ajustaScrollHoriz();" accesskey="n"><img src="/imagens/menu/normal.gif" width="17" height="15" alt="restaurar padrão de estilo (ALT + N)" title="restaurar padrão de estilo (ALT + N)" style="border: 0px;"></a></th>
+      <!--th scope="row"><a href="javascript:ativaAltoContraste();"><img src="/imagens/menu/alto_contraste.gif" width="17" height="15" alt="tamanho de texto normal (ALT + N)" title="tamanho de texto normal (ALT + N)" style="border: 0px;"></a></th-->
+    </tr>
+  </table>
+</div>
+<a name="topo"></a>
+<table width="778" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="388"><a href="/index.php"><img name="martelo" src="/imagens/menu/martelo.jpg" width="388" height="95" border="0" alt="tribunal de justi&ccedil;a do rio grande do sul"></a></td>
+
+    <td valign="top" background="/imagens/bg_topo.jpg">
+      <table width="249" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="83"><a href="/index.php" accesskey="0"><img src="/imagens/menu/pg_inic_ico.gif" alt="p&aacute;gina inicial (Alt + 0)" title="p&aacute;gina inicial (Alt + 0)" width="83" height="19" border="0"></a></td>
+          <td width="83"><a href="/orienta/mapa.php" accesskey="M"><img src="/imagens/menu/mapa_ico.gif" alt="mapa do site (Alt + M)" title="mapa do site (Alt + M)" width="83" height="19" border="0"></a></td>
+          <td width="83"><a href="/orienta/fale.php"><img src="/imagens/menu/fale_ico.gif" alt="fale conosco" title="fale conosco" width="83" height="19" border="0"></a></td>
+          <a href="/site_php/consulta/" accesskey="P"></a><a href="/site_php/jprud2/" accesskey="J"></a>
+        </tr>
+        <tr>
+
+          <td colspan="3"> <br>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><br></p>
+    </td>
+  </tr>
+
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="778">
+  <!-- fwtable fwsrc="capa_botoes_menor.png" fwbase="index.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr>
+    <td width="219" height="21"><img name="base_martelo" src="/imagens/menu/base_martelo.jpg" width="219" height="21" border="0" alt=""></td>
+    <td colspan="15">
+<script>
+function startList() {
+	//code only for IE
+	if(!document.body.currentStyle) return;
+	ajustaScrollHoriz();
+	
+	//no scroll ie...
+	//document.body.scroll="vertical";
+	//document.body.scrollWidth = 800;
+	//document.body.scrollHeight = 556;
+
+	var subs = document.getElementsByName('submenu');
+	for(var i=0; i<subs.length; i++) {
+		var li = subs[i].parentNode;
+		if(li && li.lastChild.style) {
+			li.onmouseover = function() {
+				this.lastChild.style.visibility = 'visible';
+			}
+			li.onmouseout = function() {
+				this.lastChild.style.visibility = 'hidden';
+			}
+		}
+	}
+
+	//var ul1 = document.getElementsById('menuList').getElementsByTag('');
+}
+
+ajustaScrollHoriz = function() {
+/*    //alert(document.body.clientWidth);
+	if(!document.body.currentStyle) {
+		alert('nao eh IE!');
+		return;
+	}*/
+/*	alert('style='+getActiveStyleSheet());
+	if("tam-1"!=getActiveStyleSheet()) {
+		document.body.style.overflowX='auto'; return;
+	}*/
+
+	if("tam-1"==getActiveStyleSheet()) {
+		if(document.body.clientWidth>=778) {
+			document.body.style.overflowX='hidden';
+		}
+		else {
+			document.body.style.overflowX='auto';
+		}
+	}
+	else {
+		document.body.style.overflowX='auto'; return;
+	}
+}
+
+//window.onload=startList;
+window.onresize=ajustaScrollHoriz; 
+</script>
+
+<!--link href="/css/dropdown.css" rel="stylesheet" type="text/css"-->
+
+<!--div id="menu" style="position:absolute;left:59px;width:99%;top:96;background:#B76932"-->
+<div id="menu" class="menu"> 
+  <ul id="menuList">
+
+    <li id="institu"><a class="submenu" href="" name="submenu">Institucional</a> 
+      <ul>
+        <li><a href="/institu/poder.php">Poder Judiciário</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Tribunal de Justiça</a> 
+          <ul id="institu_trib">
+            <li><a href="/institu/tj/missaovisao.php">Missão e Visão</a> 
+            <li><a href="/institu/tj/historia.php">História</a> 
+            <li><a href="/institu/tj/nominata_des.php">Nominata</a> 
+            <li><a href="/institu/tj/expresidentes.php">Ex-presidentes</a> 
+            <li><a href="/institu/tj/palacio.php">Palácio</a> 
+            <li><a href="/institu/organograma/organograma.php">Organograma</a> 
+          </ul>
+
+        </li>
+        <li><a href="#" name="submenu" class="menuxtra">Administração</a> 
+          <ul id="institu_adm">
+            <li><a href="/institu/adm/adm.php">Gestão 2006/2007</a> 
+            <li><a href="/site_php/institu/comissoes.php">Comissões</a> 
+            <li><a href="/site_php/institu/conselhos.php">Conselhos</a> 
+          </ul>
+        </li>
+        <li><a href="/institu/comarcas/comarcas_foros.php" name="submenu">Comarcas 
+          /Foros Regionais</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Prestação de Contas</a> 
+          <ul id="institu_contas">
+
+            <li><a href="/institu/contas/r_anual/indice.php">Relatório Anual</a> 
+            <li><a href="/institu/contas/r_fiscal/indice.php">Relatório de Gestão 
+              Fiscal</a> 
+          </ul>
+        </li>
+        <li><a href="/institu/enderecos/enderecos.php" name="submenu">Endereços, 
+          Telefones e Horários</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Magistrados</a> 
+          <ul id="institu_mag">
+            <li><a href="/site_php/institu/desembargadores.php">Desembargadores</a> 
+            <li><a href="/institu/magistra/juizes.php">Juízes</a> 
+            <li><a href="/institu/magistra/pretores.php">Pretores</a> 
+          </ul>
+
+        </li>
+        <li><a href="/institu/orgaos/orgaos.php" name="submenu">Órgãos Jurisdicionais</a> 
+        <li><a href="/institu/je/je.php" name="submenu">Juizados Especiais</a> 
+        <li><a href="http://jij.tj.rs.gov.br/jij_site/jij_site.home" target="_new" name="submenu">Infância 
+          e Juventude</a> 
+        <li><a href="/institu/projetos/projetos.php" name="submenu">Projetos</a> 
+        <li><a href="/institu/correg/index.php" name="submenu">Corregedoria-Geral 
+          da Justiça</a> 
+        <li><a href="/institu/c_estudos/indice_ce.php" name="submenu">Centro de 
+          Estudos</a> 
+        <li><a href="/institu/qualidade/menu.php" name="submenu">Qualidade PGQJ</a> 
+        <li><a href="/institu/memorial/rosto.php" name="submenu">Memorial do Judiciário</a>	
+        <li><a href="/institu/cm/cm.php" name="submenu">Conselho da Magistratura</a>	
+      </ul>
+
+    </li>
+    <li id="proc"><a class="submenu" href="" name="submenu">Processos</a> 
+      <ul>
+        <li><a href="/site_php/consulta/index.php">Acompanhamento Processual</a> 
+        <li><a href="/site_php/assinatura">Verificação Assinatura Digital</a> 
+        <li><a href="/proc/custas/custas.php">Valores de Custas</a> 
+        <li><a href="/site_php/cod_comarcas/">Código de Comarcas</a> 
+        <li><a href="/site_php/consulta/comarcas_integradas/index.php">Comarcas 
+          Integradas</a> 
+        <li><a href="/proc/faq_themis.php">Sistema Themis</a> 
+        <li><a href="/site_php/peticoes/index.php">Formulário p/ Protocolo de 
+          Petições</a> 
+          <!--li><a href="/site_php/leiloes/index.php">Leilões</a-->
+
+        </li>
+      </ul>
+    </li>
+    <li id="jurisp"><a class="submenu" href="" name="submenu">Jurisprudência</a> 
+      <ul>
+        <li><a href="/site_php/jprud2/index.php">Pesquisa de Jurisprudência</a> 
+        <li><a href="/site_php/revistas/index.php?TP=1">Revista de Jurisprudência</a> 
+        <li><a href="/site_php/revistas/index.php?TP=3">Revista dos Juizados Especiais</a> 
+        <li><a href="/site_php/jurisp_adm/index.php">Jurisprudência Administrativa</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Súmulas</a> 
+          <ul id="sumulas">
+
+            <li><a href="/jurispru/sumulastj.php">Súmulas TJ</a> 
+            <li><a href="/jurispru/sumulastargs.php">Súmulas do Extinto TARGS</a> 
+            <li><a href="/institu/je/sum_turmas_rec.php">Súmulas das Turmas Recursais</a> 
+            <li><a href="http://www.stf.gov.br/jurisprudencia/jurisp.asp" target="_new">Súmulas 
+              do STF</a> 
+            <li><a href="http://www.stj.gov.br/SCON/sumulas/index.jsp" target="_new">Súmulas 
+              do STJ</a> 
+            <li><a href="/jurispru/enunciados.php">Enunciados</a> </li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+    <li id="legisla"><a class="submenu" href="" name="submenu">Legislação</a> 
+      <ul>
+        <li><a href="/legisla/indice_leg.php">Leis em geral</a> 
+        <li><a href="/legisla/publ_adm_xml/index.php">Administrativa</a> </li>
+      </ul>
+    </li>
+
+    <li id="servicos"><a class="submenu" href="" name="submenu">Serviços</a> 
+      <ul>
+        <li><a href="/servicos/diario_justica/index.php">Diário da Justiça Eletrônico</a> 
+          <!--ul id="plantoes2">
+            		<li><a href="#?menu_id=6">1º Grau</a> 
+            		<li><a href="#?menu_id=6">2º Grau</a></li>
+				</ul-->
+        </li>
+        <li><a href="/servicos/calendario/calendario_sessoes.php">Sessões e Audi&ecirc;ncias</a>
+        <li><a href="/servicos/selo/consulta_selo.php">Consulta Selo Digital</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Plantões no Judiciário</a> 
+          <ul id="plantoes">
+
+            <li><a href="/servicos/plantoes/1g.php">1&ordm; Grau</a></li>
+            <li><a href="/servicos/plantoes/2g.php">2&ordm; Grau</a></li>
+          </ul>
+        </li>
+        <li><a href="/servicos/conv_TJ_EBCT/convenio_TJ_EBCT.php">Protocolo Integrado</a> 
+          <!--ul id="plantoes2">
+            		<!--li><a href="#?menu_id=6">1º Grau</a> 
+            		<li><a href="#?menu_id=6">2º Grau</a></li>
+				</ul-->
+
+          <!--li><a href="http://www.tj.rs.gov.br">Andamento de Processos</a-->
+          <!--li><a href="/servicos/jurispru.php">Consulta à Jurisprudência</a-->
+          <!--li><a href="/servicos/disque.php">Disque-Judiciário</a-->
+        <li><a href="/servicos/traduzindo/traduzindo.php">Traduzindo o Judiciário</a> 
+        <li><a href="/servicos/imprensa.php">Atendimento à Imprensa</a> 
+        <li><a href="/servicos/biblioteca.php">Biblioteca</a> 
+        <li><a href="/servicos/publ_impressas.php">Publicações Impressas</a> 
+        <li><a href="/servicos/feriados.php">Feriados no Judiciário</a> 
+          <!--li><a href="/servicos/interior/interior.php">Comarcas do Interior</a-->
+
+        <li><a href="/servicos/visitas.php">Visitas ao Palácio</a> 
+          <!--li><a href="/institu/enderecos/enderecos.php">Endereços e telefones</a-->
+        <li><a href="/servicos/links.php">Links úteis</a> 
+        <li><a href="/servicos/utilidade.php">Utilidade Pública</a> 
+        <li><a href="/servicos/especialistas/index.php">Per&iacute;cias e Outras 
+          Especialidades</a> 
+        <li><a href="/servicos/estagio.php">Estágio não-remunerado</a> 
+        <li><a href="https://portal.tj.rs.gov.br/index.asp">Portal dos Magistrados</a></li>
+      </ul>
+
+    </li>
+    <li id="noticias"><a class="submenu" href="" name="submenu">Notícias</a> 
+      <ul>
+        <li><a href="/site_php/noticias/noticias.php?assunto=1&categoria=1">Últimas 
+          notícias</a> 
+        <li><a href="/site_php/noticias/noticias.php?assunto=1&categoria=21">Discursos</a> 
+        <li><a href="/site_php/noticias/noticias.php?assunto=1&categoria=24">Publicações</a> 
+        <li><a href="/noticias/informa/informa.php">Informativo TJRS</a> 
+        <li><a href="#" name="submenu" class="menuxtra">Comunicação Social</a> 
+          <ul id="comsoc">
+
+            <li><a href="/noticias/comsoc/estrutura.php">Estrutura</a> 
+            <li><a href="/noticias/comsoc/contato.php">Contato</a> 
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li id="licitações"><a class="submenu" href="" name="submenu">Licitações</a> 
+      <ul>
+        <li><a href="/site_php/licit/informa.php">Informações gerais</a> 
+        <li><a href="/site_php/licit/form_licit/">Questionamentos</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=3&id=26082002">Convite</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=1&id=260820">Tomada 
+          de Preços</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=2&id=2608200">Concorrência</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=4&id=26082002">Concurso</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=5">Pregão Presencial</a> 
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=8">Pregão Eletrônico</a> 
+          <!--li><a href="/site_php/licit/mostralicitacoes.php?tipo=6">Pré-qualificação</a-->
+
+        <li><a href="/site_php/licit/mostralicitacoes.php?tipo=7">Dispensa&nbsp;de&nbsp;Licita&ccedil;&atilde;o</a> 
+      </ul>
+    </li>
+    <li id="conc"><a class="submenu" href="" name="submenu">Concursos</a> 
+      <ul>
+        <li><a href="/conc/conc.php">Informações Gerais</a> 
+        <li><a href="/conc/cargos1grau.php">Cargos da Justiça de 1º grau</a> 
+        <li><a href="/conc/cargostj.php">Cargos do Tribunal</a> 
+        <li><a href="/conc/concjds.php">Juiz de Direito Substituto</a>
+
+        <li> <a href="/conc/CargosTJ/chamados_cargostj.php">Chamadas Cargos do 
+          TJ</a>
+        <li><a href="/conc/notarios_registradores.php">Notários e Registradores</a> 
+        <li><a href="/conc/provas_realizadas/index.php">Provas realizadas</a> 
+      </ul>
+    </li>
+  </ul>
+</div>
+<script>startList();</script>	</td>
+
+    <!--td><img name="index_r4_c17" src="/imagens/menu/index_r4_c17.jpg" width="1" height="21" border="0" alt=""></td>
+    <td><img src="/imagens/menu/spacer.gif" width="1" height="21" border="0" alt=""></td-->
+    <!--td width="1"><img src="/imagens/menu/index_r4_c17.jpg" width="1" height="21"></td-->
+  </tr>
+</table>
+<!--script language="JavaScript1.2">mmLoadMenus();</script-->
+<table id="tabelaCorpo" width="778" border="0">
+  <tr> 
+    <td>
+      <table width="100%" border="0" align="left" cellspacing="0">
+        <tr> 
+          <td width="130" rowspan="2"><p><img src="/imagens/bg/linhas.gif" width="130" height="60"></p></td>
+
+          <td valign="bottom"><span class="titulos_Noticias">Not&iacute;cias 
+            &gt;						
+Notícias<img src="/site_php/includes/registro.php?aplicacao=1">			
+			</span>
+          </td>
+          <td width="138" rowspan="2" valign="bottom"><img src="/imagens/bg/pixel.gif" width="138" height="1"></td>
+        </tr>
+        <tr> 
+          <td width="510" height="1" valign="bottom"><img src="/imagens/bg/pixel.gif" width="100%" height="1"></td>
+        </tr>
+
+        <tr> 
+          <td width="130" valign="top"> <div align="left"><a href="javascript:history.back(-1);"><img src="/imagens/setinhas/volta.gif" alt="p&aacute;gina anterior" width="16" height="16" border="0" align="absmiddle"></a> 
+              <span class="texto_simples_tam1"> <font color="#666666"><a href="javascript:history.back(-1);">p&aacute;gina 
+              anterior</a></font></span></div></td>
+          <td width="510" class="texto_geral"><br>
+ 
+			
+		  <div id="titulo"></div>
+		    <table width="100%">
+              <tr>
+                <td width="33%" align=left><img src='imagens/mail.gif' align='absmiddle'><font face=arial size=1>&nbsp;<a href="javascript:EnviaNoticia();">enviar 
+                  por e-mail</a></font></td>
+
+                <td width="33%" align=left><img src='imagens/imprimir.gif' align='absmiddle'><font face=arial size=1>&nbsp;<a href="javascript:AbreImpressao();">vers&atilde;o 
+                  para impress&atilde;o</a></font></td>
+                <td width="21%" align=right> 
+                </td>
+              </tr>
+            </table>
+<div id="conteudo">
+
+<span class=texto_geral><P align=center><B><FONT face=Arial size=3>Revogado interdito proibitório contra sindicato de comerciários </FONT></B></P>
+<P><FONT face=Arial size=2>Por unanimidade, a 19ª Câmara Cível do TJRS deu provimento a recurso interposto pelo Sindicato dos Empregados no Comércio de Farroupilha, para revogar liminar, em ação de interdito proibitório contra a entidade. O pedido de proibição foi ajuizado pelas Lojas Colombo S/A Comércio de Utilidades Domésticas. O julgamento ocorreu na tarde de hoje (26/6).</FONT></P>
+
+<P><FONT face=Arial size=2>Conforme o relator do Agravo de Instrumento, Desembargador Mário José Gomes Pereira, não há indicativo de que o sindicato-agravante quisesse ameaçar a posse da loja-agravada durante a greve dos trabalhadores, ocorrida no dia 24/4. “O que se constata, por outro lado, é a reivindicação de direitos trabalhistas por meio de movimentação sindical assegurada constitucionalmente”, frisou.</FONT></P>
+<P><FONT face=Arial size=2>O sindicato afirmou que a decisão liminar da Justiça de 1º Grau baseou-se em fatos equivocados, sendo o movimento reivindicatório legítimo. Asseverou que não impediu o acesso à loja de empregados que não quisessem aderir à parada. </FONT></P>
+<P><FONT face=Arial size=2>Já agravada sustentou que inexistiu tal movimento e que a manifestação dos trabalhadores tinha por escopo a Emenda nº 3. Narrou que, na referida data, em sua sede, houve a formação de piquetes de manifestantes, os quais em forma de um cordão humano impediram o acesso dos demais funcionários à empresa.</FONT></P>
+<P><FONT face=Arial size=2>Para o magistrado, não ficou comprovada a efetiva ofensa à posse da empresa. “Buscar no uso de ações possessórias salvo-conduto contra movimentos sindicais parece-me, é desvirtuar o sentido da lei”, asseverou. </FONT></P>
+<P><FONT face=Arial size=2>Por outro lado, salientou que cabe ao sindicato administrar, da melhor maneira possível, eventual transtorno ocasionado pelo movimento grevista. “Sem ferir os dois direitos igualmente protegidos e previstos na Constituição Federal, qual seja, o direito de propriedade, o direito de greve, assim como o direito do cliente da agravada.”</FONT></P>
+<P><FONT face=Arial size=2>Votaram de acordo com o magistrado os Desembargadores Guinther Spode e Carlos Rafael dos Santos Júnior.</FONT></P>
+<P><FONT face=Arial size=2>Proc. 70019701036 (Lizete Flores)</FONT></P>
+<P>
+<HR>
+
+<P></P>
+<P align=center><EM><FONT face=Arial size=2>EXPEDIENTE<BR></FONT></EM><EM><FONT face=Arial size=2>Assessora-Coordenadora de Imprensa: Tania Bampi<BR></FONT></EM>&nbsp;</P></span><center><font face="arial" size="1">Publicação em 26/06/2007 18:30</font></center></div>		  
+            
+          </td>
+          <td width="138" valign="top"><img src="/imagens/bg/linhas2.gif" width="138" align="top"></p></td>
+        </tr>
+        <tr> 
+          <td valign="top"> 
+            <!--<a href="javascript:history.back(-1)"><img src="/imagens/icos/ico_volta.gif" width="80" height="16" border="0"></a><br>
+            <a href="javascript:window.print()"><img src="/imagens/icos/ico_imprimir.gif" width="80" height="17" border="0"></a><br>
+            <a href="javascript:add_bookmark();"><img src="/imagens/icos/ico_favoritos.gif" width="80" height="16" border="0"></a><br>
+            <a href="recomendar.php" target="_blank"><img src="/imagens/icos/ico_recomendar.gif" width="80" height="16" border="0"></a> 
+            <br>!-->
+          </td>
+          <td width="510" align="center" class="texto_simples_tam1"><div align="right"> 
+              <p>&nbsp;</p>
+
+              <p>&nbsp;</p>
+              <p><a href="javascript:history.back(-1);"><img src="/imagens/setinhas/volta.gif" alt="p&aacute;gina anterior" width="16" height="16" border="0" align="absmiddle"></a> 
+                <span class="texto_simples_tam1"> <font color="#666666"><a href="javascript:history.back(-1);">p&aacute;gina 
+                anterior</a></font></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#topo"><img src="/imagens/setinhas/topo.gif" alt="topo desta p&aacute;gina" width="16" height="16" border="0" align="absmiddle"></a> 
+                <span class="texto_simples_tam1"><a href="#topo">topo desta p&aacute;gina</a></span></p>
+              <p><a href="#topo"><br>
+                </a></p>
+            </div></td>
+
+          <td width="138" valign="top"><br> </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+    </td></tr> </table>
+<table width="778" border="0" height="35" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="/imagens/barra_inferior1.jpg">
+      <table width="750" border="0" cellspacing="0" align="center"> 
+        <tr>
+          <td valign="top">
+            <p ALIGN="CENTER"><font size="1" face="Arial, Helvetica, sans-serif" color="#FFFFFF">Copyright 
+              &copy; 2006 - Tribunal de Justi&ccedil;a do Estado do Rio Grande 
+              do Sul - Departamento de Inform&aacute;tica &nbsp;&nbsp;&nbsp;<font color="#FFFFFF" size="1" face="Arial, Helvetica, sans-serif"><a href="/creditos/acessibilidade.php"><img src="/imagens/setinhas/acessibilidade_peq.jpg" alt="recursos de acessibilidade" width="19" height="19" border="0" align="absbottom" /></a> Este site possui recursos de acessibilidade.</font></font></p>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-466768-2";
+urchinTracker();
+</script>
+</body></html>
