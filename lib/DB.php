@@ -2,7 +2,7 @@
 
 	/* mod on 16/1/2008 11:33:04 */
 
-	class database{
+	class DATABASE{
 
 		/* var $user	= "rcj_site";
 		var $pass	= "rcj12569db";
@@ -10,8 +10,8 @@
 		var $host	= "mysql.rcj.com.br"; */
 
 		var $user	= "root";
-		var $pass	= "";
-		var $db		= "rcj";
+		var $pass	= "taiar";
+		var $db		= "ass";
 		var $host	= "localhost";
 
 		function __construct(){

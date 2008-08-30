@@ -82,17 +82,29 @@
 			$str = addslashes($str);
 			return $str;
 		}
+		
+		function carregaCont($url){
+			$contents = "";
 
-		function menuAdmin(){
-			?>
-				<h1>Administração</h1>
-				<p align="center">
-					<a href="?c=17">Clientes</a> | 
-					<a href="?c=18">Arquivos</a> | 
-					<a href="?c=19">Estatísticas</a>
-				</p>
-				<br />
-			<?
+			////versão FOPEN
+			
+			/* $fp = fopen($url, "r");
+			while(!feof($fp)){
+				$contents = $contents . fread($fp, 1024);
+			}
+			fclose($fp); */
+
+			//versão CURL
+			 
+			$ch = curl_init();
+			$timeout = 0; 
+			curl_setopt ($ch, CURLOPT_URL, $url);
+			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+			$contents = curl_exec($ch);
+			curl_close($ch);
+			
+			return $contents;
 		}
 
 	} //end class

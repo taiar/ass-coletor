@@ -1,123 +1,65 @@
 #!/usr/bin/php
 <?php
 
-	/* limpa o maldito CACHE */
+    echo "Carregando coletor...\n";
+    require('./lib/DB.php');
+    require('./lib/UTIL.php');
+    
+    /********
 
-	$dir = opendir("./cache/");
-	while((false !== ($file = readdir($dir)))){
-		if(filetype("./cache/" . $file) !== "dir"){
-			unlink("./cache/" . $file);
-		}
-	}
-	echo "Cache limpo!<hr />";
-	
-	include("lib/conectar.php");
+        O proximo passo, depois desse coletor estar implementado, será verificar
+        a data e hora em que o programa estara sendo executado, antes de fazer a
+        varredura pelos servidores atras de informação (em certo caso, inutil)
 
-	/*****************************************
-	****				STF				******
-	******************************************/
- 	/* require_once 'modulos/stf/main.class.php';
-	$stf = new stf();
-	
-	//data da ultima noticia cadastrada desse órgão.
-	$last = implode("", mysql_fetch_row(mysql_query("select data_cad from noticias where orgao='stf' order by data_cad desc limit 1")));
-	
-	if($stf->getLast()> $last){
-		$c = $stf->getContents();
-		for($i=0;$i<count($c);$i++){
-			if($c[$i]['data'] > $last){
-				if(!mysql_query("insert into noticias (orgao, data_cad, titulo, conteudo, url) values ('stf', '" . $c[$i]['data'] . "', '" . $c[$i]['titulo'] . "', '" . $c[$i]['conteudo'] . "', '" . $c[$i]['link'] . "')")){
-					echo "Erro <a href=\"" . $c[$i]['link'] . "\">aqui</a>: " . mysql_error();
-					die();
-				}else{
-					echo "STF, ok!
-\n";
-				}
-			}
-		}
-	}else{
-		echo "STF, sem novidades...
-\n";
-	} */
+    ********/
+    
+    echo "Carregando módulo Yahoo Finance...\n";
+    //carrega o modulo de parser a ser utilizado
+    require('./modulos/yahooFinance/parser.class.php');
+    $parser = new yahooFinance();
+    
+    //captura segundo a tabela de tickes
+    $db = new DATABASE();
+    
+    echo "Procurando Tickers a serem pesquisados...\n";
+    $tickers = $db->find("select * from ass_tickers");
+    
+    echo "Começando a coleta:\n";
+    for ($i = 0; $i < $tickers["total"]; $i++)
+    {
+        echo "\n\tTicker " . $i . ": " . $tickers["dados"][$i]["ticker"] . " - " . $tickers["dados"][$i]["razao"] . "\n";
+        // caso o ticker esteja ligado a uma URL especifica
+        if(!empty($tickers["dados"][$i]["link"]))
+            $url = $tickers["dados"][$i]["link"];
+        else
+            $url = "http://finance.yahoo.com/lookup?s=" . $tickers["dados"][$i]["ticker"] . ".SA";
+       
+       echo "\t\tColetando os dados...";
+       $conteudo = UTIL::carregaCont($url);
+       echo "\t\t\t[  ok  ]\n";
+       
+       echo "\t\tIniciando o parsing dos dados...";
+       $parser->parse($conteudo);
+       echo "\t[  ok  ]\n";
+       
+       echo "\t\tArmazenando dados...";
+       $ins = array(
+            "id"            => "",
+            "ticker_id"     => $tickers["dados"][$i]["id"],
+            "data"          => UTIL::hora(),
+            "valor"         => $parser->dados[0]
+       );
+       
+       if($db->insert("ass_logs", $ins))
+            echo "\t\t\t[  ok  ]\n";
+       else
+            echo "\t\t\t[  erro  ]\n";
+       
+       echo "\t\tLimpando buffer...";
+       $parser->free();
+       echo "\t\t\t[  ok  ]\n";
+    }
+    
+    echo "\n\n\nColeta finalizada!\n\n"
 
-	/*****************************************
-	****				STJ				******
-	******************************************/
- 	require_once 'modulos/stj/main.class.php';
-	$stj = new stj();
-	
-	//data da ultima noticia cadastrada desse órgão.
-	$last = implode("", mysql_fetch_row(mysql_query("select data_cad from noticias where orgao='stj' order by data_cad desc limit 1")));
-	
-	if($stj->getLast()> $last){
-		$c = $stj->getContents();
-		for($i=0;$i<count($c);$i++){
-			if($c[$i]['data'] > $last){
-				if(!mysql_query("insert into noticias (orgao, data_cad, titulo, conteudo, url) values ('stj', '" . $c[$i]['data'] . "', '" . $c[$i]['titulo'] . "', '" . $c[$i]['conteudo'] . "', '" . $c[$i]['link'] . "')")){
-					echo "Erro <a href=\"" . $c[$i]['link'] . "\">aqui</a>: " . mysql_error();
-					die();
-				}else{
-					echo "STJ, ok!
-\n";
-				}
-			}
-		}
-	}else{
-		echo "STJ, sem novidades...
-\n";
-	}
-
-	/*****************************************
-	****				TST				******
-	******************************************/
-	require_once 'modulos/tst/main.class.php';
-	$tst = new tst();
-	$c = $tst->getContents();
-
-	for($i=0;$i<count($c);$i++){
-		$q = mysql_query("select count(*) from noticias where url='" . $c[$i]['link'] . "' limit 1");
-		$l = mysql_fetch_row($q);
-		if($l[0] == 0){
-			if(!mysql_query("insert into noticias (orgao, data_cad, titulo, conteudo, url) values ('tst', '" . $c[$i]['data'] . "', '" . $c[$i]['titulo'] . "', '" . $c[$i]['conteudo'] . "', '" . $c[$i]['link'] . "')")){
-				echo "Erro <a href=\"" . $c[$i]['link'] . "\">aqui</a>: " . mysql_error();
-				die();
-			}else{
-				echo "TST, ok!
-\n";
-			}
-		}else{
-			echo "TST, sem 9-dades...
-\n";
-		}
-	}
-
-	/*****************************************
-	****				TRF5				******
-	******************************************/
- 	require_once 'modulos/trf5/main.class.php';
-	$trf5 = new trf5();
-	
-	//data da ultima noticia cadastrada desse órgão.
-	$last = implode("", mysql_fetch_row(mysql_query("select data_cad from noticias where orgao='trf5' order by data_cad desc limit 1")));
-	
-	if($trf5->getLast()> $last){
-		$c = $trf5->getContents();
-		for($i=0;$i<count($c);$i++){
-			if($c[$i]['data'] > $last){
-				if(!mysql_query("insert into noticias (orgao, data_cad, titulo, conteudo, url) values ('trf5', '" . $c[$i]['data'] . "', '" . $c[$i]['titulo'] . "', '" . $c[$i]['conteudo'] . "', '" . $c[$i]['link'] . "')")){
-					echo "Erro <a href=\"" . $c[$i]['link'] . "\">aqui</a>: " . mysql_error();
-					die();
-				}else{
-					echo "TRF5, ok!
-\n";
-				}
-			}
-		}
-	}else{
-		echo "TRF5, sem novidades...
-\n";
-	}
-
-	include("lib/desconectar.php");
-	//fim
 ?>
