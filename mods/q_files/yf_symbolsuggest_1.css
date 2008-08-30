@@ -1,0 +1,183 @@
+/*
+ * $Id: yf_symbolsuggest.css,v 1.18 2007/10/23 18:37:04 joyd Exp $
+ */
+
+#symlookupLink {
+	cursor: pointer;
+}
+
+/* ************ yahoo finance company symbol/name auto suggest */ 
+
+#quoteContainer {
+	position: absolute; 
+	z-index: 9050;
+} 
+#quoteContainer .yui-ac-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 41em;
+	border: 1px solid #9C9C9C;
+	background: #fefefe;
+	overflow: hidden;
+	text-align: left;
+	padding: .5em;
+	font-size: 92%;
+} 
+#quoteContainer .yui-ac-ft {
+	font-family: Verdana, sans-serif;
+	font-size: 92%;
+}
+#quoteContainer .yui-ac-ft .moreresults {
+	padding-left: 0.3em;
+}
+#quoteContainer .yui-ac-ft .tip {
+	border-top: 1px solid #D6D6D6;
+	color: #636363; 
+	padding: 0.5em 0 0 0.4em;
+	margin-top: .25em;
+}
+#quoteContainer em {
+	font-weight: bold;
+	font-style: normal;
+}
+#quoteContainer .yui-ac-ft .tip a {
+	padding-left: 0.3em;
+}
+#quoteContainer .yui-ac-ft a {
+	color: #003399; 
+	text-decoration: none;
+}
+#quoteContainer ul {
+	margin: 0;
+	padding-bottom: .4em;
+	padding: 0.38em 0;
+	width: 100%;
+} 
+#quoteContainer li {
+	padding: 0 0.38em;
+	_width: 100%;
+	cursor: default;
+	white-space: nowrap;
+	list-style: none;
+	vertical-align: bottom; /* solves the gap problem in IE !!! */
+	margin: 0; /* override ct_200702141530.css bugz:1538303 */
+} 
+#quoteContainer li.yui-ac-highlight {
+	background: #D6F7FF;
+	cursor: pointer;
+} 
+
+#quoteContainer li table {
+	width: 100%;
+}
+
+#quoteContainer li td { 
+	vertical-align: bottom; 
+	text-align: left;
+	padding: 0 0;
+}
+*html #quoteContainer li td { 	
+	/*
+	padding: 0;
+	_padding-right: .6em;
+	*/
+}
+#quoteContainer li td.exch_type_wrapper { 
+	color: #aaa; 
+	width: 10em; 
+	height: auto;
+	text-align: right;
+	font-size: 92%;
+	_font-size: 72%;
+}
+#quoteContainer li td.symbol { 
+	width: 6.5em; 
+}
+
+/* ************ sym lookup bubble */
+
+#getQuotesHelpPanel {
+	display: none;
+  	position: absolute;
+	top: -0.92em;
+	left: .38em;
+}
+/* override YUI */		
+#getQuotesHelpPanel.yui-panel {
+  	font-family: Arial, Helvetica, sans-serif;
+  	color: #333;
+  	text-align: left;
+  	background-color: transparent;
+}
+/* reset */
+#getQuotesHelpPanel h4 {
+	font-size: 100%;
+}
+#getQuotesHelpPanel em {
+	font-style: normal;	
+
+}
+#getQuotesHelpPanel p {
+	margin: 0;
+	padding: 0;
+}
+#getQuotesHelpPanel .hd,
+#getQuotesHelpPanel .bd,
+#getQuotesHelpPanel .ft {
+	width: 300px;
+}	
+#getQuotesHelpPanel .hd {
+  	background: transparent url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.png) no-repeat 0 0;	
+	_background-image:url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.gif);
+	height: 40px;
+	_height: 30px;
+}
+#getQuotesHelpPanel .bd {
+	position: relative;
+  	background: transparent url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.png) repeat-y -300px 0;  
+	_background-image:url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.gif);
+}
+#getQuotesHelpPanel .ft {
+  	background: transparent url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.png) no-repeat right bottom;
+	_background-image:url(http://us.js2.yimg.com/us.js.yimg.com/i/us/fi/fcue-bg-lg-yel-sprite-200708271143.gif);
+	height: 15px;
+	_height: 5px;
+}
+#getQuotesHelpPanel h4 {
+	font-weight: bold; 
+  	padding: 0 1.15em 0.23em 1em;
+	display: inline;
+}
+#getQuotesHelpPanel h4 em {
+	text-transform: uppercase;
+	color: #E47E00;
+	padding-right: 0.38em;
+	font-weight: bold; 
+}
+#getQuotesHelpPanel p {
+  	padding: 0.38em 2em 0 1.15em;
+  	font-size: 92%;
+}
+#getQuotesHelpPanel a {
+	font-size: 92%;
+  	padding: 0.38em 1.15em 0 1.15em;
+	display: inline-block;
+	color: #003399;
+}
+#getQuotesHelpPanel a.close {
+  	color: #E47E00;
+	padding: 0;
+  	position: absolute; 
+  	top: 0; 
+  	right: 1.15em; 
+	_right: 2em;
+  	text-decoration: none;
+  	cursor: pointer;
+	font-size: 85%;
+}
+#getQuotesHelpPanel a.close em {
+  	font-weight: bold;
+	font-size: 107%;
+}
+
