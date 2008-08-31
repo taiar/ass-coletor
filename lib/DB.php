@@ -4,17 +4,12 @@
 
 	class DATABASE{
 
-		/* var $user	= "rcj_site";
-		var $pass	= "rcj12569db";
-		var $db		= "rcj";
-		var $host	= "mysql.rcj.com.br"; */
-
 		var $user	= "root";
 		var $pass	= "taiar";
 		var $db		= "ass";
 		var $host	= "localhost";
 
-		function __construct(){
+		function DATABASE(){
 			if(!mysql_connect($this->host, $this->user, $this->pass)){ return false; }
 			if(!mysql_select_db($this->db)){ return false; }
 		}
