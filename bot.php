@@ -27,13 +27,14 @@
     echo "Começando a coleta:\n";
     for ($i = 0; $i < $tickers["total"]; $i++)
     {
-        echo "\n\tTicker " . $i . ": " . $tickers["dados"][$i]["ticker"] . " - " . $tickers["dados"][$i]["razao"] . "\n";
         // caso o ticker esteja ligado a uma URL especifica
         if(!empty($tickers["dados"][$i]["link"]))
             $url = $tickers["dados"][$i]["link"];
         else
-            $url = "http://finance.yahoo.com/lookup?s=" . $tickers["dados"][$i]["ticker"] . ".SA";
-       
+            $url = "http://finance.yahoo.com/q?s=" . $tickers["dados"][$i]["ticker"] . ".SA";
+
+        echo "\n\tTicker " . $i . ": " . $tickers["dados"][$i]["ticker"] . " - " . $tickers["dados"][$i]["razao"] . " (" . $url . ")\n";
+
        echo "\t\tColetando os dados...";
        $conteudo = UTIL::carregaCont($url);
        echo "\t\t\t[  ok  ]\n";
@@ -50,8 +51,10 @@
             "valor"         => $parser->dados[0]
        );
        
+       echo "\n\n------------------->> " . $parser->dados[0] . "\n\n";
+       
        if($db->insert("ass_logs", $ins))
-            echo "\t\t\t[  ok  ]\n";
+            echo "\t\t\t[  ok  ]\n" . mysql_error();
        else
             echo "\t\t\t[  erro  ]\n";
        
