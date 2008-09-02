@@ -4,10 +4,10 @@
 
 	class DATABASE{
 
-		var $user	= "taiar";
-		var $pass	= "taiar12569db";
-		var $db		= "taiar";
-		var $host	= "mysql.taiar.com.br";
+		var $user	= "root";
+		var $pass	= "";
+		var $db		= "ass";
+		var $host	= "localhost";
 
 		function DATABASE(){
 			if(!mysql_connect($this->host, $this->user, $this->pass)){ return false; }
