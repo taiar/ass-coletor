@@ -13,7 +13,7 @@
 		var $times;
 		
 		#	Constructor
-		function __construct ($unixtime)
+		function TIME ($unixtime)
 		{
 			if (is_int($unixtime))
 			{

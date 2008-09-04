@@ -12,7 +12,7 @@
 	$closes = new FECHAMENTO($db);
     
     echo "Verificando expediente dos pregões...\n";
-    $time = new TIME(time());
+    $time = new TIME(UTIL::hora());
     if(!$time->valid())
     {
     	echo "Fora de expediente.\n";

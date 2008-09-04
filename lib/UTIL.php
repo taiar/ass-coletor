@@ -3,7 +3,9 @@
 	class UTIL{
 
 		function hora(){
-			return time();
+			$la = time();
+			$aqui = $la - (3600 * 6);
+			return $aqui;
 		}
 		
 		/* ****************************************************
