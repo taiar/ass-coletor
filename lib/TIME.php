@@ -62,11 +62,6 @@
 			if(
 				(
 					$this->time > $inicio_1 && 
-					$this->time < $fim_1
-				)
-				||
-				(
-					$this->time > $inicio_2 && 
 					$this->time < $fim_2
 				)
 			)
@@ -84,7 +79,7 @@
 		
 		function valid()
 		{
-			if($this->time_rules() && $this->day_rules())
+			if($this->time_rules() & $this->day_rules())
 				return true;
 			return false;
 		}

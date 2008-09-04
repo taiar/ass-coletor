@@ -6,14 +6,10 @@
     require('./lib/DB.php');
     require('./lib/UTIL.php');
     require('./lib/TIME.php');
+    require('./lib/FECHAMENTO.php');
     
-    /********
-
-        O proximo passo, depois desse coletor estar implementado, será verificar
-        a data e hora em que o programa estara sendo executado, antes de fazer a
-        varredura pelos servidores atras de informação (em certo caso, inutil)
-
-    ********/
+	$db = new DATABASE();
+	$closes = new FECHAMENTO($db);
     
     echo "Verificando expediente dos pregões...\n";
     $time = new TIME(time());
@@ -21,7 +17,7 @@
     {
     	echo "Fora de expediente.\n";
     	echo "Verificando se houve fechamento do dia.\n";
-    	if($time->has_closed())
+    	if($closes->got_closed())
     	{
     		echo "O fechamento diário já foi feito...\n";
     		echo "Nada pra fazer... zzZzZzZzZzZzZzzz.......\n\n";
@@ -39,9 +35,7 @@
 		require('./modulos/yahooFinance/parser.class.php');
 		$parser = new yahooFinance();
 		
-		//captura segundo a tabela de tickes
-		$db = new DATABASE();
-		
+		//captura segundo a tabela de tickers
 		echo "Procurando Tickers a ser pesquisados...\n";
 		$tickers = $db->find("select * from ass_tickers");
 		
@@ -58,12 +52,17 @@
 
 		   echo "\t\tColetando os dados...";
 		   $conteudo = UTIL::carregaCont($url);
+		   if(!$conteudo)
+		   {
+		   		echo "\n\nERRO: PHP_CURL não está instalado...\n";
+		   		die();
+		   }		   
 		   echo "\t\t\t[  ok  ]\n";
-		   
+
 		   echo "\t\tIniciando o parsing dos dados...";
 		   $parser->parse($conteudo);
 		   echo "\t[  ok  ]\n";
-		   
+
 		   echo "\t\tArmazenando dados...";
 		   $ins = array(
 		        "id"            => "",

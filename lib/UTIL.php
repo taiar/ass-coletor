@@ -95,8 +95,14 @@
 			fclose($fp); */
 
 			//versão CURL
-			 
+			
 			$ch = curl_init();
+			if(!$ch)
+			{
+				echo "ERRO: PHP_CURL não está instalado...\n";
+				exit;
+			}
+				
 			$timeout = 0; 
 			curl_setopt ($ch, CURLOPT_URL, $url);
 			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);

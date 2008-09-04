@@ -4,10 +4,10 @@
 
 	class DATABASE{
 
-		var $user	= "root";
+		var $user	= "";
 		var $pass	= "";
-		var $db		= "ass";
-		var $host	= "localhost";
+		var $db		= "";
+		var $host	= "";
 
 		function DATABASE(){
 			if(!mysql_connect($this->host, $this->user, $this->pass)){ return false; }
