@@ -2,7 +2,7 @@
 
 	class UTIL{
 
-		public function hora(){
+		function hora(){
 			return time();
 		}
 		
@@ -13,7 +13,7 @@
 
 			nao esquecer do enctype="multipart/form-data"
 		******************************************************* */
-		public function upload($file, $loc, $size='', $ext=''){
+		function upload($file, $loc, $size='', $ext=''){
 			//checka se o tamanho é adequado
 			if($size != ""){
 				if($file['size'] > $size){
