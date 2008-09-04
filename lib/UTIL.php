@@ -4,7 +4,7 @@
 
 		function hora(){
 			$la = time();
-			$aqui = $la - (3600 * 6);
+			$aqui = $la - (3600 * 4);
 			return $aqui;
 		}
 		
@@ -116,5 +116,7 @@
 		}
 
 	} //end class
+
+    echo date("h:i:s D M Y", UTIL::hora());
 
 ?>
