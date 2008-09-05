@@ -6,6 +6,7 @@
 			$la = time();
 			$aqui = $la - (3600 * 4);
 			return $aqui;
+			return $la;
 		}
 		
 		/* ****************************************************
@@ -35,7 +36,6 @@
 				if(copy($file['tmp_name'], $loc)){
 					return true;
 				}else{
-					echo "cuh";
 					return false;
 					exit;
 				}
@@ -116,7 +116,5 @@
 		}
 
 	} //end class
-
-    echo date("h:i:s D M Y", UTIL::hora());
 
 ?>

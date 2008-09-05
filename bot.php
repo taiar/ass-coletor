@@ -9,10 +9,10 @@
     require('./lib/FECHAMENTO.php');
     
 	$db = new DATABASE();
+	$time = new TIME(UTIL::hora());
 	$closes = new FECHAMENTO($db);
     
     echo "Verificando expediente dos pregões...\n";
-    $time = new TIME(UTIL::hora());
     if(!$time->valid())
     {
     	echo "Fora de expediente.\n";
@@ -22,7 +22,28 @@
     		echo "O fechamento diário já foi feito...\n";
     		echo "Nada pra fazer... zzZzZzZzZzZzZzzz.......\n\n";
     	}else{
-    		//Faz o fechamento do dia
+    		echo "Fechamento diário ainda não foi feito!\n";
+    		echo "Iniciando fechamento...\n";
+
+		    echo "Localizando fechamentos...\n\n";
+		    $tickers = $db->find("select * from ass_tickers");
+		    
+		    for ($i = 0; $i <  $tickers["total"]; $i++)
+		    {
+		        echo "\tFazendo fechamento de: " . $tickers["dados"][$i]["ticker"] . "\n";
+		        $closes->set_ticker_by_id($tickers["dados"][$i]["id"]);
+
+                echo "\t\tBuscando os logs do dia...\n";
+		        $closes->get_logs_of_the_day();
+		        		        
+		        echo "\t\tCalculando...\n";
+		        $closes->set_all_values();
+		        
+		        echo "\t\tSalvando fechamento...";
+		        $closes->save_all();
+		        echo "Pronto!\n\n";
+		    }
+		    
     	}
     }
    	else
@@ -71,7 +92,7 @@
 		        "valor"         => $parser->dados[0]
 		   );
 		   
-		   echo "\n\n------------------->> " . $parser->dados[0] . "\n\n";
+		   //echo "\n\n------------------->> " . $parser->dados[0] . "\n\n";
 		   
 		   if($db->insert("ass_logs", $ins))
 		        echo "\t\t\t[  ok  ]\n" . mysql_error();

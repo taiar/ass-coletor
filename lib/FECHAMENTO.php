@@ -29,22 +29,23 @@
 		var $mme;
 
 		var $db;
+		var $ins;
 
 		#	Constructor
-		function FECHAMENTO ($db_obj)
+		function FECHAMENTO($db_obj)
 		{
 			$this->db = $db_obj;
 		
 			$this->time_open = mktime(08, 00, 00, date("m"), date("d"), date("Y"));
 			$this->time_close = mktime(20, 00, 00, date("m"), date("d"), date("Y"));
-			$this->time_date = date("d-m-Y");
+			$this->time_date = date("Y-d-m", UTIL::hora());
 			
 			$this->logs = array();
 		}
 		###	
 		
 		function got_closed(){
-			$res = $this->db->find("select (*) from ass_fechamentos where data=" . $this->time_date . " limit 1");
+			$res = $this->db->find("select * from ass_fechamentos where data=" . $this->time_date . " limit 1");
 			if($res["total"] > 0)
 				return true;
 			return false;
@@ -63,15 +64,8 @@
 				die();
 			}
 			
-			$this->$logs = $this->db->find("select * 
-				from 
-					ass_logs 
-				where 
-					ticker_id = '" . $this->ticker_id . "' and 
-					data >= '" . $this->time_open . "' and 
-					data <= '" . $this->time_close . "' 
-				order 
-				by data");
+			$this->logs = $this->db->find("select * from ass_logs where ticker_id = '" . $this->ticker_id . "' and data >= '" . $this->time_open . "' and data <= '" . $this->time_close . "' order by data");
+
 		}
 		
 		function get_fechamento()
@@ -101,12 +95,12 @@
 
 		function get_variacao()
 		{
-			$this->variacao = $this->abertura - $this->fechamento;
+			$this->variacao = (float) ($this->fechamento) - ($this->abertura);
 		}
 
 		function set_all_values()
 		{
-			$this->get_logs_of_the_day();
+			//$this->get_logs_of_the_day();
 			$this->get_fechamento();
 			$this->get_abertura();
 			$this->get_minimo_maximo();
@@ -115,17 +109,18 @@
 		
 		function save_all()
 		{
-			$ins = array(
-				"ticker_id" 		=> $this->ticker-id,
+			$this->ins = array(
+				"ticker_id" 		=> $this->ticker_id,
 				"data" 				=> $this->time_date,
 				"fechamento" 		=> $this->fechamento,
 				"abertura" 			=> $this->abertura,
 				"minimo" 			=> $this->minimo,
 				"maximo" 			=> $this->maximo,
-				"volume_financeiro" => NULL,			// nao implementado
 				"variacao" 			=> $this->variacao,
+				"volume_financeiro" => NULL			// nao implementado
 			);
-			if(!$this->db->insert("ass_fechamentos", $ins))
+
+			if(!$this->db->insert("ass_fechamentos", $this->ins))
 			{
 				echo mysql_error();
 				die();
